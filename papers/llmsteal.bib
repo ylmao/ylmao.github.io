@@ -1,0 +1,23 @@
+@inproceedings{li-etal-2026-secret,
+    title = "Secret Stealing Attacks on Local {LLM} Fine-Tuning through Supply-Chain Model Code Backdoors",
+    author = "Li, Zi  and
+      Zhou, Tian  and
+      Li, Wenze  and
+      Hua, Jingyu  and
+      Mao, Yunlong  and
+      Zhong, Sheng",
+    editor = "Lee, Hung-Yi  and
+      Dev, Sunipa  and
+      Li, Junyi Jessy  and
+      Elliott, Desmond",
+    booktitle = "Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing",
+    month = oct,
+    year = "2026",
+    address = "Budapest, Hungary",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.emnlp-main.812/",
+    doi = "10.18653/2026.emnlp-main.812",
+    pages = "18914--18930",
+    ISBN = "979-8-89176-459-0",
+    abstract = "Local fine-tuning datasets routinely contain sensitive secrets such as API keys, personal identifiers, and financial records. Although ``local offline fine-tuning'' is often viewed as a privacy boundary, we reveal that compromised model code is sufficient to steal them. Current passive pretrained-weight poisoning attacks, while effective for natural language, fundamentally fail to capture such sparse high-entropy targets due to their reliance on probabilistic semantic prefixes. To bridge this gap, we identify and exploit a practical but overlooked supply-chain vector{---}malicious model code camouflaged as standard architectural definitions{---}to realize a paradigm shift from passive weight poisoning to active execution hijacking. We introduce a deterministic full-chain memorization mechanism: it locks onto token-level secrets in dynamic computation flows via online tensor-rule matching, and leverages value{--}gradient decoupling to stealthily inject attack gradients, overcoming gradient drowning to force model memorization. Furthermore, we achieve, for the first time, attacker-verifiable secret stealing through black-box queries that precisely distinguishes true leakage from hallucination. Our attack achieves over 98{\%} Strict ASR in the default LoRA setting with limited primary-task utility degradation and effectively evades defense measures including semantic safety filtering, code auditing, and perplexity-based detection."
+}
